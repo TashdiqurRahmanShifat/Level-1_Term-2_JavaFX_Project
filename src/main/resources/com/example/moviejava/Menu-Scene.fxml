@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuSceneController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@production.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="436.0" layoutY="112.0" prefHeight="35.0" prefWidth="216.0" text="Choose One Option">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="436.0" layoutY="202.0" mnemonicParsing="false" onAction="#OnRecentMovieclick" prefHeight="35.0" prefWidth="216.0" stylesheets="@Style.css" text="Most Recent Movie" />
+      <Button layoutX="436.0" layoutY="395.0" mnemonicParsing="false" onAction="#Ontransferclick" prefHeight="35.0" prefWidth="216.0" stylesheets="@Style.css" text="Transfer Movie" />
+      <Button layoutX="436.0" layoutY="347.0" mnemonicParsing="false" onAction="#OnAddMovieClick" prefHeight="35.0" prefWidth="216.0" stylesheets="@Style.css" text="Add Movie" />
+      <Button layoutX="584.0" layoutY="442.0" mnemonicParsing="false" onAction="#backclick" stylesheets="@Style.css" text="Back" />
+      <Button layoutX="436.0" layoutY="300.0" mnemonicParsing="false" onAction="#OnTotalProfitClick" prefHeight="35.0" prefWidth="216.0" stylesheets="@Style.css" text="Total Profit" />
+      <Button layoutX="436.0" layoutY="250.0" mnemonicParsing="false" onAction="#onmaximumrevenueclick" prefHeight="35.0" prefWidth="216.0" stylesheets="@Style.css" text="Movie with Maximum Revenue" />
+      <Label fx:id="LabelName" contentDisplay="CENTER" layoutX="22.0" layoutY="22.0" prefHeight="77.0" prefWidth="657.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="436.0" layoutY="155.0" mnemonicParsing="false" onAction="#allmovieslistclick" prefHeight="35.0" prefWidth="216.0" stylesheets="@Style.css" text="All Movies List" />
+   </children>
+</AnchorPane>

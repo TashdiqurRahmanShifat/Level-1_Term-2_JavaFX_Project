@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddmovieController">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="638.0" layoutX="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@add.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="409.0" text="Movie Revenue">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="374.0" text="Movie Budget">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="336.0" text="Movie Duration">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="298.0" text="Genre3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="262.0" text="Genre2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="226.0" text="Genre1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="188.0" text="Relese Year">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="151.0" text="Movie Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="movierevenuebar" layoutX="244.0" layoutY="405.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="moviebudgetbar" layoutX="244.0" layoutY="370.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="runtimebar" layoutX="244.0" layoutY="332.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="genre3bar" layoutX="244.0" layoutY="294.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="genre2bar" layoutX="244.0" layoutY="258.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="genre1bar" layoutX="244.0" layoutY="222.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="releasingyearbar" layoutX="244.0" layoutY="184.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="movietitlebar" layoutX="244.0" layoutY="147.0" prefHeight="25.0" prefWidth="217.0" />
+      <Label layoutX="15.0" layoutY="78.0" prefHeight="61.0" prefWidth="609.0" text="You need to fill the following requirements to add a movie">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="544.0" layoutY="533.0" mnemonicParsing="false" onAction="#backclick" stylesheets="@Style.css" text="Back" />
+      <Button layoutX="271.0" layoutY="447.0" mnemonicParsing="false" onAction="#saveclick" stylesheets="@Style.css" text="Add Movie">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Label fx:id="showmessage" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="483.0" prefHeight="41.0" prefWidth="638.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="33.0" layoutY="533.0" mnemonicParsing="false" onAction="#logoutclick" stylesheets="@Style.css" text="Log Out" />
+      <Label fx:id="label" alignment="CENTER" layoutX="7.0" layoutY="8.0" prefHeight="61.0" prefWidth="629.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
